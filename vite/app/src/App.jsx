@@ -10,7 +10,7 @@ function StepVPN({ isActive, toggleStep, stepNumber }) {
       axios.get('https://ifconfig.me/ip')
         .then(response => {
           const ip = response.data;
-          if(ip.startsWith('193.219.95.')) {
+          if(ip.startsWith('158.129.162.')) {
             setVpnStatus('connected');
           } else if(ip.startsWith('158.129.172.')) {
             setVpnStatus('knf-network');
