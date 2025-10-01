@@ -48,6 +48,16 @@ A web application designed to help Vilnius University (VU) students and staff co
    cd vpn-helper
    ```
 
+2. **Copy docker-compose sample file**
+   ```bash
+   cp docker-compose.yml.sample docker-compose.yml
+   ```
+
+3. **OPTIONAL: Modify docker-compose.yml file if needed**
+   ```bash
+   nano docker-compose.yml
+   ```
+
 4. **Start the docker-compose stack**
    ```bash
    ./runUpdateThisStack.sh
