@@ -4,6 +4,10 @@ A web application designed to help Vilnius University (VU) students and staff co
 
 </br>
 
+### ❌ DEVELOPMENT IN PROGRESS! ❌
+
+</br>
+
 ## 🌟 Features
 
 - **Real-time VPN Status Check**: Automatically detects if you're connected to VU VPN
