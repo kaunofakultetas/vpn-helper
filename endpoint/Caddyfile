@@ -1,0 +1,6 @@
+:80 {
+    # VITE
+    handle /* {
+        reverse_proxy vpnhelp-vite:80
+    }
+}
