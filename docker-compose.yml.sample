@@ -1,0 +1,25 @@
+services:
+
+  vpnhelp-endpoint:
+    container_name: vpnhelp-endpoint
+    image: caddy:2.10.2-alpine
+    read_only: true
+    ports:
+      - 80:80
+    volumes:
+      - ./endpoint/Caddyfile:/etc/caddy/Caddyfile:ro
+    restart: unless-stopped
+
+
+  vpnhelp-vite:
+    container_name: vpnhelp-vite
+    image: vpnhelp-vite
+    user: 1000:1000
+    build:
+      context: ./vite
+      dockerfile: Dockerfile                   # Prod
+    #   dockerfile: Dockerfile.dev               # Dev
+    # volumes:                                   # Dev
+    #   - ./vite/app:/app                        # Dev
+    restart: unless-stopped
+
