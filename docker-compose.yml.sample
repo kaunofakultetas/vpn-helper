@@ -16,6 +16,7 @@ services:
     container_name: vpnhelp-vite
     image: vpnhelp-vite
     user: 1000:1000
+    read_only: true
     build:
       context: ./vite
       dockerfile: Dockerfile                   # Prod
